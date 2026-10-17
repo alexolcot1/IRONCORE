@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function() {
+        try {
+          var currentFetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            configurable: true,
+            enumerable: true,
+            get: function() { return currentFetch; },
+            set: function(fn) { currentFetch = fn; }
+          });
+        } catch (_) {}
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IronCore Fitness Guatemala</title>
+    <meta name="description" content="Sistema de gestión integral para gimnasios en Guatemala: control de acceso, socios con DPI, membresías en Quetzales (Q), tienda POS y rutinas." />
+    <meta property="og:title" content="IronCore Fitness Guatemala" />
+    <meta property="og:description" content="Sistema de gestión integral para gimnasios en Guatemala: control de acceso, socios con DPI, membresías en Quetzales (Q), tienda POS y rutinas." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Oswald:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,6 @@
+{
+  "name": "IronCore Fitness Guatemala",
+  "description": "Sistema de gestión integral para gimnasios en Guatemala: control de acceso, socios con DPI, membresías en Quetzales (Q), tienda POS y rutinas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
