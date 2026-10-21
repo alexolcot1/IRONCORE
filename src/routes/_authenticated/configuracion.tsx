@@ -167,11 +167,23 @@ function ConfiguracionPage() {
         title="Configuración & Auditoría"
         subtitle="Administra la información de tu negocio, catálogo de planes, inventario y registros del sistema."
       >
-        <Button variant="outline" size="sm" asChild className="gap-2 border-primary/50 text-primary hover:bg-primary/10">
-          <a href="/INFORME_TECNICO_IRONCORE.docx" download="INFORME_TECNICO_IRONCORE.docx">
-            <FileText className="size-4" /> Descargar Informe Técnico (.DOCX / Google Docs)
-          </a>
-        </Button>
+        <div className="flex flex-wrap gap-2">
+          <Button variant="default" size="sm" asChild className="gap-2 shadow-sm">
+            <a href="/MANUAL_DE_USUARIO_IRONCORE.docx" download="MANUAL_DE_USUARIO_IRONCORE.docx">
+              <Download className="size-4" /> Manual de Usuario (.DOCX)
+            </a>
+          </Button>
+          <Button variant="outline" size="sm" asChild className="gap-2 border-primary/50 text-primary hover:bg-primary/10">
+            <a href="/MANUAL_TECNICO_IRONCORE.docx" download="MANUAL_TECNICO_IRONCORE.docx">
+              <FileText className="size-4" /> Manual Técnico (.DOCX)
+            </a>
+          </Button>
+          <Button variant="ghost" size="sm" asChild className="gap-2 text-muted-foreground hover:text-foreground">
+            <a href="/INFORME_TECNICO_IRONCORE.docx" download="INFORME_TECNICO_IRONCORE.docx">
+              <FileText className="size-4" /> Informe Técnico (.DOCX)
+            </a>
+          </Button>
+        </div>
       </PageHeader>
 
       <Tabs defaultValue="negocio" className="space-y-6">
